@@ -1,0 +1,67 @@
+/* All settings */
+@import url('https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&family=Roboto:ital,wght@0,100..900;1,100..900&family=Rubik+Spray+Paint&family=Russo+One&display=swap');
+::-webkit-scrollbar {
+  width: 0;
+}
+html, body{
+    max-width: 1920px;
+    margin: 0;
+    padding: 0;
+    background-color: #FFF9F3;
+}
+button{
+    margin-top: auto;
+    margin-bottom: auto;
+    border: none;
+    background-repeat: no-repeat;
+    background-color: transparent;
+}
+button:active {
+    transform: scale(0.95);
+}
+button:hover {
+    opacity: 0.8;
+}
+h1{
+    font-family: Russo One;
+    font-size: 36px;
+}
+/* Header */
+header{
+    display: inline-flex;
+    background-color: #FFF9F3;
+    position: sticky;
+    top: 0px;
+    z-index: 1;
+    width: 1920px;
+}
+.button--logo{
+    background-image: url(/src/Icons/logo.svg);
+    width: 93px;
+    height: 71px;
+}
+a{
+    font-family: Roboto;
+    color: #4E4035;
+    font-size: 18px;
+    text-decoration: none;
+}
+
+.header--list{
+    padding: 0px;
+    display: inline-flex;
+    justify-content: space-between;
+    width: 648px;
+}
+.stick{
+    height: 24px;
+    width: 1px;
+    background-color: #4E4035;
+}
+/* Page 1 */
+
+/* Page 2 */
+
+/* Page 3 */
+
+/* Footer */
