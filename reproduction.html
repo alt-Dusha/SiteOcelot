@@ -27,47 +27,38 @@
             <div class="zxc">
   <div class="card--holder">
 
-    <div class="card-wrapper">
+    <button class="card-wrapper">
       <div class="card ZXC1">
         <p>Оцелоты спариваются<br>обычно <span class="color">раз в год</span>,<br>чаще зимой</p>
       </div>
-      <div class="name">
-        <p class="name--1">Спаривание</p>
-      </div>
-    </div>
+    </button>
 
     <img src="src/Image/reproduction/page1/arrow1.svg" alt="arrow">
 
-    <div class="card-wrapper">
+    <button class="card-wrapper">
       <div class="card ZXC2">
         <p>Беременность<br>длится<br>около <span class="color">70–85</span> дней</p>
       </div>
-      <div class="name">
-        <p class="name--2">Беременность</p>
-      </div>
-    </div>
+      
+    </button>
 
     <img src="src/Image/reproduction/page1/arrow1.svg" alt="arrow">
 
-    <div class="card-wrapper">
+    <button class="card-wrapper">
       <div class="card ZXC3">
         <p>Рождается<br>от <span class="color">1 до 3</span> слепых<br>и беззащитных котят</p>
       </div>
-      <div class="name">
-        <p class="name--3">Рождение</p>
-      </div>
-    </div>
+      
+    </button>
 
     <img src="src/Image/reproduction/page1/arrow2.svg" alt="arrow">
 
-    <div class="card-wrapper">
+    <button class="card-wrapper">
       <div class="card ZXC4">
         <p>Мать <span class="color">заботится</span><br>о потомстве<br>до года,<br>обучая охоте,<br>миру и выживанию</p>
       </div>
-      <div class="name">
-        <p class="name--4">Уход за потомством</p>
-      </div>
-    </div>
+      
+    </button>
 
   </div>
 </div>
@@ -122,5 +113,37 @@
     <button><img src="src/Icons/dzen.svg" onclick="window.location.href=' https://dzen.ru/id/5ed76fc12625bc1747b150ba'" alt="dzen"></button>
   </div>
     </div>
+    <script>
+  const cards = document.querySelectorAll('.card');
+  const texts = [
+    'Спаривание',
+    'Беременность',
+    'Рождение',
+    'Уход за потомством'
+  ];
+
+  cards.forEach((card, index) => {
+    card.addEventListener('click', () => {
+      // Убираем фон со всех карточек
+      cards.forEach(c => {
+        c.classList.remove('active');
+        c.querySelector('p').innerHTML = c.dataset.original;
+      });
+
+      // Ставим фон текущей и меняем текст
+      card.classList.add('active');
+      card.querySelector('p').textContent = texts[index];
+    });
+  });
+
+  // Сохраняем оригинальный текст в data-атрибуты
+  window.addEventListener('DOMContentLoaded', () => {
+    cards.forEach(card => {
+      const p = card.querySelector('p');
+      card.dataset.original = p.innerHTML;
+    });
+  });
+</script>
+
 </body>
 </html>

@@ -20,7 +20,7 @@ button{
 button:active {
     transform: scale(0.95);
 }
-button:hover {
+button:hover:not(.card-wrapper){
     opacity: 0.8;
 }
 h1{
@@ -49,6 +49,12 @@ header{
     position: sticky;
     top: 0px;
     z-index: 1;
+}
+.card.active {
+  background-image: url("/src/Image/border.svg");
+  background-size: cover;
+  background-position: center;
+  color: #fff; /* можно изменить при необходимости */
 }
 .button--logo{
     background-image: url(/src/Icons/logo.svg);
@@ -84,7 +90,7 @@ a{
     height: 1136px;
 }
 .header--1{
-    padding-top: 138px;
+    padding-top: 48px;
     width: 100%;
     display: inline-flex;
     justify-content: center;
@@ -99,7 +105,7 @@ a{
     justify-content: center;
 }
 .card--holder {
-    padding-top: 120px;
+    padding-top: 150px;
   display: flex;
   align-items: flex-start;
   gap: 20px;
