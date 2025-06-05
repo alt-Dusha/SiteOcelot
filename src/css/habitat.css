@@ -1,0 +1,241 @@
+/* All settings */
+@import url('https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&family=Roboto:ital,wght@0,100..900;1,100..900&family=Rubik+Spray+Paint&family=Russo+One&display=swap');
+::-webkit-scrollbar {
+  width: 0;
+}
+html, body{
+    max-width: 1920px;
+    margin: 0;
+    padding: 0;
+    background-color: #FFF9F3;
+}
+button{
+    margin-top: auto;
+    padding: 0;
+    margin-bottom: auto;
+    border: none;
+    background-repeat: no-repeat;
+    background-color: transparent;
+}
+button:active {
+    transform: scale(0.95);
+}
+button:hover {
+    opacity: 0.8;
+}
+h1{
+    font-family: Russo One;
+    font-size: 36px;
+    color: #FFF9F3;
+    width: 100%;
+    text-align: center;
+}
+p{
+    font-family: Roboto;
+    font-size: 20px;
+    font-weight: 400;
+    padding: 0px;
+    margin: 0px;
+}
+/* Header */
+header{
+    width: 100%;
+    padding-top: 13px;
+    display: inline-flex;
+    justify-content: space-around;
+    background-color: #FFF9F3;
+    position: sticky;
+    top: 0px;
+    z-index: 1;
+}
+.next{
+    background-image: url(/src/Image/habitat/page3/button.svg);
+    width: 76px;
+    height: 47px;
+    position: relative;
+}
+.button--logo{
+    background-image: url(/src/Icons/logo.svg);
+    width: 93px;
+    height: 71px;
+    padding-right: 500px;
+}
+a{
+    font-family: Roboto;
+    color: #4E4035;
+    font-size: 18px;
+    text-decoration: none;
+}
+.header--list{
+    margin-top: 19px;
+    padding: 0px;
+    display: inline-flex;
+    justify-content: space-between;
+    width: 648px;
+    padding-right: 600px;
+}
+.stick{
+    height: 24px;
+    width: 1px;
+    background-color: #4E4035;
+}
+.color{
+    color: #A8D5BA;
+    font-weight: 800;
+}
+/* Page 1 */
+.page--1{
+    margin-top: -84px;
+    background-image: url(/src/Image/habitat/page1/BackGround.svg);
+    width: 100%;
+    height: 1202px;
+}
+.page--1 h1{
+    padding-top: 134px;
+    margin-left: 211px;
+    width: 302px;
+}
+.hero-1-content--1{
+    text-align: center;
+    width: 370px;
+}
+.hero--1{
+    margin-left: 188px;
+    margin-top: 216px;
+    margin-right: 0;
+}
+.hero--1 div:not(.marker){
+    top: -60px;
+    position: relative;
+    margin-left: 880px;
+    height: 110px;
+    width: 115px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+.marker{
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+}
+.odin{
+    padding-top: 80px;
+}
+
+/* Page 2 */
+.page--2{
+    background-image: url(/src/Image/habitat/page2/BackGround.svg);
+    width: 100%;
+    height: 1354px;
+}
+.head--2{
+    background-image: url(/src/Image/habitat/page2/BackGroundHeader.svg);
+    width: 1472px;
+    height: 141px;
+    position: absolute;
+    right: 0;
+}
+.head--2 h1{
+    padding-top: 40px;
+    position: relative;
+}
+.hero--2{
+    text-align: end;
+    padding-top: 264px;
+    margin-right: 80px;
+}
+
+/* Page 3 */
+.page--3{
+    margin-top: -353px;
+    background-image: url(/src/Image/habitat/page3/BackGround.svg);
+    width: 100%;
+    height: 1441px;
+}
+.head--3{
+    padding-top: 60px;
+}
+.head--3 h1{
+    background-image: url(/src/Image/habitat/page3/BackGroundHeader.svg);
+    padding-top: 60px;
+    background-repeat: no-repeat;
+    width: 1750px;
+    height: 236px;
+}
+.hero--3{
+    width: 385px;
+    margin-top: 80px;
+    margin-left: 58%;    
+}
+.hero--3 p{
+    text-align: center;
+}
+.card--holder{
+    display: inline-flex;
+    flex-direction: row;
+    margin-left: 600px;
+    top: -100px;
+    position: relative;
+}
+.card--holder img:hover {
+  transform: rotateY(15deg) rotateX(5deg);
+}
+.art1{
+    padding-top: 300px;
+}
+.art2{
+    padding-top: 150px;
+}
+
+/* Footer */
+.footer {
+  width: 100%;
+  height: 128px;
+  background-color: #FFF9F3;
+  display: flex;
+  justify-content: space-between;
+  padding: 40px 80px 0 80px;
+  box-sizing: border-box;
+}
+.footer p {
+  font-size: 18px;
+  color: #4E4035;
+  margin: 0;
+}
+.logo--button {
+  width: 121px;
+  height: 23px;
+  background: none;
+  border: none;
+  padding: 0;
+}
+.footer--1 {
+  display: block;
+}
+.footer--2 {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  gap: 60px;
+}
+.footer--info {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+.footer--info div {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+.footer--address {
+  max-width: 220px;
+  padding-top: 6px;
+}
+.links {
+  display: flex;
+  padding-bottom: 50px;
+  align-items: center;
+  gap: 10px;
+}

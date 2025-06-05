@@ -9,7 +9,7 @@
 </head>
 <body>
     <header>
-        <button class="button--logo" onclick="window.location.href=' index.html'"></button>
+        <button class="button--logo" onclick="window.location.href='index.html'"></button>
         <div class="header--list">
             <a href="index.html">Главная</a>
             <div class="stick"></div>
@@ -18,8 +18,150 @@
             <a href="reproduction.html">Размножение</a>
         </div>
     </header>
-    <div>
 
+    <div class="page--1">
+        <div class="hero--1">
+            <p class="logo shadow">оцелот</p>
+            <p class="logo">оцелот</p>
+            <p class="content--1">дикая кошка с нежной душой</p>
+            <p class="hero--1--p">
+                Живущий в густых лесах и таинственных джунглях,<br>
+                оцелот — не просто хищник<br><br>
+                Это грациозное существо<br>
+                с уникальным пятнистым узором,<br>
+                словно нарисованным<br>
+                кистью природы
+            </p>
+        </div>
+        <div class="button--watch">
+            <button id="scroll-down-btn"><p>Узнать больше!</p></button>
+        </div>
     </div>
+
+    <div class="page--2">
+        <div class="head--2">
+            <div class="head--2--1">
+                <h1>Происхождение оцелота</h1>
+            </div>
+        </div>
+        <div class="hero--2">
+            <p>
+                <span class="hero--2--p">Оцелот (Leopardus pardalis)</span> — хищная кошка<br>
+                из тропических лесов Америки,<br>
+                веками почитаемая в культурах майя и ацтеков<br>
+                как символ силы и скрытности<br><br>
+                Принадлежит к роду Leopardus,<br>
+                куда также входят его ближайшие родственники — маргай,<br>
+                ягуарунди и андыская кошка
+            </p>
+        </div>
+    </div>
+
+    <div class="page--3">
+        <div class="head--3">
+            <div class="head--3--1">
+                <h1>Строение оцелота</h1>
+            </div>
+        </div>
+        <div class="hero--3">
+        <div class="carusel">
+            <button class="left"><img src="src/Image/home/page3/left.svg"></button>
+            <img id="carusel-image" src="src/Image/home/Page3/art1.svg">
+            <button class="right"><img src="src/Image/home/page3/right.svg"></button> 
+        </div>
+
+        <p id="carusel-text" class="carusel-text">
+            Оцелот — среднего размера дикая кошка,<br>
+            длиной тела 70–100 см и весом от 8 до 16 кг.<br>
+            Его тело вытянутое и гибкое,<br>
+            мощными конечностями<br>
+            и длинным хвостом, который помогает<br>
+            сохранять баланс<br><br>
+            Шерсть короткая, густая и очень мягкая,<br>
+            окрашена в золотисто-жёлтые тона<br>
+            с характерными чёрными пятнами и розетками.<br>
+            Уникальный рисунок меха<br>
+            у каждого животного — как отпечатки<br>
+            пальцев у человека
+        </p>
+            <button onclick="window.location.href='habitat.html'" class="next"></button>
+        </div>
+    </div>
+
+    <div class="footer">
+  <div class="footer--1">
+    <button class="logo--button" onclick="window.location.href='https://www.vhutein.ru/'">
+      <img src="src/Icons/logo_1.svg" alt="logo">
+    </button>
+    <p>© АНО ВО ВХУТЕИН, 2025</p>
+  </div>
+
+  <div class="footer--2">
+    <div class="footer--info">
+      <div>
+        <img src="src/Icons/phone.svg" alt="phone">
+        <a href="https://vk.com/disgustingperson">Контакты</a>
+      </div>
+      <div>
+        <img src="src/Icons/shield.svg" alt="support">
+        <a href="https://github.com/alt-Dusha?tab=overview&from=2025-05-01&to=2025-05-31">Поддержка</a>
+      </div>
+    </div>
+    <div class="footer--address">
+      <p>191028, Моховая ул., д. 40<br>(метро "Гостиный двор")</p>
+    </div>
+  </div>
+
+  <div class="links">
+    <button><img src="src/Icons/tg.svg" onclick="window.location.href=' https://web.telegram.org/k/#@vhutein'" alt="tg"></button>
+    <div class="stick"></div>
+    <button><img src="src/Icons/vk.svg" onclick="window.location.href=' https://vk.com/vhutein'" alt="vk"></button>
+    <div class="stick"></div>
+    <button><img src="src/Icons/dzen.svg" onclick="window.location.href=' https://dzen.ru/id/5ed76fc12625bc1747b150ba'" alt="dzen"></button>
+  </div>
+    </div>
+    <script>
+        document.getElementById('scroll-down-btn').addEventListener('click', () => {
+        window.scrollBy({
+        top: 1050,
+        left: 0,
+        behavior: 'auto' // плавная прокрутка
+    });
+});
+    </script>
+    <script>
+        const slides = [
+            {   
+                image: 'src/Image/home/Page3/art1.svg',
+                text: 'Оцелот — среднего размера дикая кошка,\nдлиной тела 70–100 см и весом от 8 до 16 кг.\nЕго тело вытянутое и гибкое,\nс мощными конечностями\nи длинным хвостом, который помогает\nсохранять баланс\n\nШерсть короткая, густая и очень мягкая,\nокрашена в золотисто-жёлтые тона\nс характерными чёрными пятнами и розетками.\nУникальный рисунок меха\nу каждого животного — как отпечатки\nпальцев у человека'
+            },
+            {
+                image: 'src/Image/home/Page3/art2.svg',
+                text: 'Как и у всех кошачьих, у оцелота\nразвитый мозг\nс отличной координацией движений\nи острым зрением и слухом.\nЕго скелет гибкий, особенно позвоночник и суставы,\nчто обеспечивает ловкость и высокую\nподвижность\n\nОцелот — плотоядный хищник, поэтому его\nпищеварительная система адаптирована\nк перевариванию мяса: короткий кишечник,\nмощные челюсти и острые зубы,\nвключая резцы и клыки\nдля разрывания плоти'
+            }
+        ];
+
+        let currentIndex = 0;
+
+        const imgElement = document.getElementById('carusel-image');
+        const textElement = document.getElementById('carusel-text');
+        const leftBtn = document.querySelector('.left');
+        const rightBtn = document.querySelector('.right');
+
+        function updateSlide(index) {
+            imgElement.src = slides[index].image;
+            textElement.innerHTML = slides[index].text.replace(/\n/g, '<br>');
+        }
+
+        leftBtn.addEventListener('click', () => {
+            currentIndex = (currentIndex - 1 + slides.length) % slides.length;
+            updateSlide(currentIndex);
+        });
+
+        rightBtn.addEventListener('click', () => {
+            currentIndex = (currentIndex + 1) % slides.length;
+            updateSlide(currentIndex);
+        });
+    </script>
 </body>
 </html>
